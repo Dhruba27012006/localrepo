@@ -48,42 +48,6 @@
 
 }
 
-.Image-slider-section {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slides {
-  display: flex;
-  width: 500%; /* 4 original slides + 1 duplicate for smooth looping */
-  height: 100%;
-  animation: slide 20s infinite; /* Adjust duration as needed */
-}
-
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@keyframes slide {
-  0%   { margin-left: 0%; }
-  10%  { margin-left: 0%; }
-  20%  { margin-left: -100%; }
-  30%  { margin-left: -100%; }
-  40%  { margin-left: -200%; }
-  50%  { margin-left: -200%; }
-  60%  { margin-left: -300%; }
-  70%  { margin-left: -300%; }
-  100% { margin-left: 0%; }
-}
-
-
-.Image-slider-section:hover .slides {
-  animation-play-state: paused; 
-}
 
 .sections {
   display: flex; 
